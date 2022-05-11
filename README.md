@@ -22,7 +22,7 @@ The application for making and tracking room reservations. It allows users to ad
     `sudo docker-compose up`
     `./manage.py create_database.py`
 3) Change ``INSTALLED_APPS`` 
-```INSTALLED_APPS = (
+   ```INSTALLED_APPS = (
         ...,
         'room_reserve',
         'rest_framework',
@@ -35,9 +35,9 @@ The application for making and tracking room reservations. It allows users to ad
 5) Run the File   
 `python manage.py runserver`
 
-## Run
+## Run the following link in the browser 
 http://127.0.0.1:8000/booking/core/swagger/
 ## Superuser 
-username:'admin'
-password:'adminadmin'
+* username:'admin'
+* password:'adminadmin'
 
