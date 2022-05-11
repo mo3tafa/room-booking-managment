@@ -15,12 +15,12 @@ The application for making and tracking room reservations. It allows users to ad
 1) Install All Dependencies  
 `pip3 install -r requirements.txt`
 2) Database cofiguration 
-    * change 'settings.py' 
-      https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-    * create postgresql
-      ** sudo docker-compose build
-      ** sudo docker-compose up
-      ** ./manage.py create_database.py
+    a) change 'settings.py':
+      * https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+    b) create postgresql:
+      * sudo docker-compose build
+      * sudo docker-compose up
+      * ./manage.py create_database.py
 3) Change ``INSTALLED_APPS`` 
     INSTALLED_APPS = (
         ...,
