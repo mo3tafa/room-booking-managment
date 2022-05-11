@@ -46,6 +46,7 @@ class DefaultAPITest(APITestCase):
         self.test_login()
         self.test_logout()
 
+
 class RoomAPITest(DefaultAPITest):
     # python manage.py test room_reserve.tests.RoomAPITest.room_main
     
@@ -78,7 +79,6 @@ class RoomAPITest(DefaultAPITest):
         for item in self._room_data_list:
             self.test_create_room(data=item)
         # self.test_list_room()
-
 
 class ReservationAPITest(RoomAPITest):
     # python manage.py test room_reserve.tests.ReservationAPITest.reservation_main
