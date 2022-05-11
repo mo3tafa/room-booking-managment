@@ -44,7 +44,7 @@ class DefaultViewSet(viewsets.GenericViewSet):
 
 
     @transaction.atomic
-    # @action(detail=False, methods=["post"])
+    @action(detail=False, methods=["post"])
     def register(self, request):
         """
         register for user API.
@@ -69,7 +69,7 @@ class DefaultViewSet(viewsets.GenericViewSet):
         login.
         
         ---
-        username = [username,]
+        username = [username,email,cellphone]
         """
         _chk = False
         _serializer = self.get_serializer(data=request.data)
@@ -124,7 +124,7 @@ class DefaultViewSet(viewsets.GenericViewSet):
         return Response(response)
 
     
-    # @action(detail=False, methods=['post'])
+    @action(detail=False, methods=['post'])
     def changepassword(self, request):
         """
         change password for current user.

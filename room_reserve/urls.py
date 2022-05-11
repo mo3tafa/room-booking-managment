@@ -9,11 +9,8 @@ router = DefaultRouter()
 
 
 router.register(r'',DefaultViewSet)
-# router.register(r'user',UserViewSet)
 router.register(r'room',RoomViewSet)
 router.register(r'reservation',ReservationViewSet)
-# router.register(r'state',StateViewSet)
-# router.register(r'role',RoleViewSet)
 
 
 urlpatterns = [
