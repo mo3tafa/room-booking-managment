@@ -18,9 +18,9 @@ The application for making and tracking room reservations. It allows users to ad
     * change 'settings.py' 
       https://docs.djangoproject.com/en/4.0/ref/settings/#databases
     * create postgresql
-      sudo docker-compose build
-      sudo docker-compose up
-      ./manage.py create_database.py
+      ** sudo docker-compose build
+      ** sudo docker-compose up
+      ** ./manage.py create_database.py
 3) Change ``INSTALLED_APPS`` 
     INSTALLED_APPS = (
         ...,
