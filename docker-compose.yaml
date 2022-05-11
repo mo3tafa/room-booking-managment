@@ -1,0 +1,24 @@
+version: "1.0"
+
+# IPv4 only
+# docker network create http_network
+
+# IPv4/IPv6 network
+# docker network create http_network --ipv6 --subnet "fd00:0000:0000:0000::/64"
+# Refer to https://github.com/hardware/mailserver/#ipv6-support for more information.
+
+
+services:   
+postgresql:
+    container_name: postgresql
+    image: postgres
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:  
+      POSTGRES_HOST: postgresql
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: Mam@69853301135803421#
+      POSTGRES_DB: main
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
