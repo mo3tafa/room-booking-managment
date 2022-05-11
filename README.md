@@ -29,9 +29,15 @@ The application for making and tracking room reservations. It allows users to ad
         'drf_yasg',
     )```
     
-4) Run the File  
+4) Migrate
+`python manage.py makemigrations`
+`python manage.py migrate`
+5) Run the File   
 `python manage.py runserver`
 
 ## Run
 http://127.0.0.1:8000/booking/core/swagger/
+## Superuser 
+username:'admin'
+password:'adminadmin'
 
